@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&lang=en");
+// @import "bootstrap";
 
 /*COLORS*/
 
-$main-red: #ED254E;
-$main-yellow: #F9DC5C;
-$main-grey: #C2C2C2;
-$main-dark: #011936;
+$main-red: #FC0A54;
+$main-purple: #C111FA;
+$main-grey: #687582;
+$main-dark: #000414;
+$main-grean: #4B9E44;
+$main-light: #15A3A1;
 
 .simple-calendar {
   .day {}
@@ -39,12 +42,20 @@ $main-dark: #011936;
   color: $main-red
 }
 
-.main-bg-yellow {
-  background-color: $main-yellow
+.main-bg-light {
+  background-color: $main-light
 }
 
-.main-text-yellow {
-  color: $main-yellow
+.main-text-light {
+  color: $main-light
+}
+
+.main-bg-purple {
+  background-color: $main-purple
+}
+
+.main-text-purple {
+  color: $main-purple
 }
 
 .main-bg-white {
