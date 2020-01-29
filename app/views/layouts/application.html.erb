@@ -12,9 +12,7 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= month_calendar do |date| %>
-      <%= date %>
-    <% end %>
+
     <%= yield %>
   </body>
 </html>
