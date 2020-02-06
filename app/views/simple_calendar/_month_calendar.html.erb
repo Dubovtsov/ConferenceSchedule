@@ -1,8 +1,14 @@
 <div class="simple-calendar">
-  <div class="calendar-heading">
-    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %>
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
-    <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view, class: 'btn btn-primary' %>
+  <div class="calendar-heading mb-2">
+    <div class="btn-group">
+      <%= link_to (octicon "chevron-left", :height => 24,  :class => "right left", :"aria-label" => "hi"), 
+                  calendar.url_for_previous_view, 
+                  class: 'btn btn-main-green' %>
+      <%= link_to (octicon "chevron-right", :height => 24,  :class => "right left", :"aria-label" => "hi"), 
+                  calendar.url_for_next_view, 
+                  class: 'btn btn-main-green' %>
+    </div>
+    <span class="calendar-title btn btn-main-green"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
   </div>
 
   <table class="table bg-white table-striped">

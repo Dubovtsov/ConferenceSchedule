@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&lang=en");
 // @import "bootstrap";
-
+//https://www.palettable.io/687582-C111FA-000414-FC0A54-59DEEA
 /*COLORS*/
 
-$main-red: #FC0A54;
-$main-purple: #C111FA;
-$main-grey: #687582;
-$main-dark: #000414;
-$main-grean: #4B9E44;
-$main-light: #15A3A1;
+$main-red: #e84118;
+$main-purple: #8c7ae6;
+$main-grey: #dcdde1;
+$main-dark: #2f3640;
+$main-green: #4cd137;
+$main-light: #f5f6fa;
+$blue: #00a8ff;
+$main-yellow: #fbc531;
+
+.octicon {
+  fill: white;
+}
 
 .simple-calendar {
   .day {}
@@ -21,7 +27,10 @@ $main-light: #15A3A1;
   .wday-5 {}
   .wday-6 {}
 
-  .today {}
+  .today {
+    background-color: $main-yellow;
+    border: 2px solid $main-red;
+  }
   .past {}
   .future {}
 
@@ -32,6 +41,10 @@ $main-light: #15A3A1;
   .current-month {}
 
   .has-events {}
+}
+
+body {
+  padding: 10px;
 }
 
 .main-bg-red {
@@ -70,12 +83,23 @@ $main-light: #15A3A1;
   color: $main-dark
 }
 
+.main-bg-blue {
+  background-color: $blue;
+}
+
 .main-bg-grey {
   background-color: $main-grey
 }
 
 .main-text-grey {
   color: $main-grey
+}
+
+.btn-main-green {
+  padding: 4px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.418);
+  color: white;
+  background-color: $main-green;
 }
 
 .letter-spacing {
